@@ -29,3 +29,5 @@ jobs:
           go-version: "1.23.0"
       - name: Check formatting
         run: test -z $(go fmt ./...)
+      - name: Linting with staticheck
+        uses: dominikh/staticcheck-action@v1
